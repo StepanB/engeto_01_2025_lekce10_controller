@@ -22,19 +22,7 @@ public class AuthorService {
     AuthorRepository authorRepository;
 
     public List<Author> getAllAuthors() {
-        List<Author> out = jdbcTemplate.query("select * from authors;", new RowMapper<Author>() {
-            @Override
-            public Author mapRow(ResultSet rs, int rowNum) throws SQLException {
-                Author author = new Author();
-                author.setId(rs.getInt("id"));
-                author.setFirstName(rs.getString("first_name"));
-                author.setLastName(rs.getString("last_name"));
-
-                return author;
-            }
-        });
-
-        return out;
+        return authorRepository.getAll();
 
     }
 
