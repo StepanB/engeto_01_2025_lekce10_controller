@@ -22,8 +22,7 @@ public class AuthorService {
     AuthorRepository authorRepository;
 
     public List<Author> getAllAuthors() {
-        return authorRepository.getAll();
-
+        return authorRepository.findAll();
     }
 
     public Optional<Author> getAuthorById(Integer id) {
