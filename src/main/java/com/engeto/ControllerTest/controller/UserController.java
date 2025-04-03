@@ -18,7 +18,7 @@ public class UserController {
         user.setLastName("Bohm");
         user.setUserId(1L);
 
-        User user2 = new User("Karel", "Novak", 2L, "Kaja");
+        User user2 = new User("Jindrich", "Kral", 2L, "King");
         users.add(user);
         users.add(user2);
 
