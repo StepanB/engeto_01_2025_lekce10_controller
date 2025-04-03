@@ -12,6 +12,7 @@ public class Author {
 
     private String firstName;
     private String lastName;
+    private String nationality;
 
     public Author() {
     }
@@ -44,5 +45,13 @@ public class Author {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String getNationality() {
+        return nationality;
+    }
+
+    public void setNationality(String nationality) {
+        this.nationality = nationality;
     }
 }

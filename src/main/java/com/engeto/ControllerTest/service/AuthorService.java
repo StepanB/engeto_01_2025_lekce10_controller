@@ -29,6 +29,7 @@ public class AuthorService {
                 author.setId(rs.getInt("id"));
                 author.setFirstName(rs.getString("first_name"));
                 author.setLastName(rs.getString("last_name"));
+                author.setNationality(rs.getString("nationality"));
 
                 return author;
             }
